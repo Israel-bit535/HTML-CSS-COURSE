@@ -120,7 +120,7 @@
     let previousInput = '';
     let operation = null;
     let resetScreen = false;
-    let clickCount = 0; // Counter for debugging
+    let clickCount = 0; 
 
     const display = document.getElementById('display');
 
@@ -129,7 +129,7 @@
     }
 
     function appendNumber(number) {
-        clickCount++; // Increment the counter each time the function runs
+        clickCount++; 
         console.log('Click count:', clickCount, 'Number:', number);
 
         if (currentInput === '0' || resetScreen) {
@@ -192,8 +192,6 @@
         }
         updateDisplay();
     }
-
-    // Initialize display
     updateDisplay();
 </script>
 </body>
